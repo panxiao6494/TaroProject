@@ -30,9 +30,9 @@ export default class Index extends Component {
   componentWillMount() { }
 
   componentDidMount() {
-    $httpRequest("POST", "category/listCommodityByCategoryId", {}).then(res => {
-      console.log(res);
-    });
+    // $httpRequest("POST", "category/listCommodityByCategoryId", {}).then(res => {
+    //   console.log(res);
+    // });
   }
 
   componentWillUnmount() { }
@@ -55,7 +55,6 @@ export default class Index extends Component {
   }
   render() {
     const { current } = this.state;
-    console.log(current, 3)
     return (
       <View className="index">
         <View className="head">
